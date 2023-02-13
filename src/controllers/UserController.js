@@ -1,5 +1,6 @@
 const User = require('../models/User');
 
+
 module.exports = {
     async index(req, res) {
         const users = await User.findAll();
@@ -7,7 +8,6 @@ module.exports = {
         return res.json(users);
 
     },
-
     async store(req, res) {
         const { name, email } = req.body;
 
@@ -41,7 +41,7 @@ module.exports = {
         }
 
         await user.destroy();
-
+                                                                                                            /* const Creator = mxxcxn was here */
         return res.send();
     }
 }

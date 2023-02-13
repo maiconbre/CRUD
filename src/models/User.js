@@ -10,7 +10,7 @@ class User extends Model {
         })
     }
     static associate(models) {
-        this.hasMany(models.Consulta, { foreignKey: 'user_id', as: 'consultas' });
+        this.hasMany(models.Consulta, { foreignKey: 'user_id', as: 'consultas' });                                                                                              /* const Creator = mxxcxn was here */
     }
 }
 User.associate = (models) => {

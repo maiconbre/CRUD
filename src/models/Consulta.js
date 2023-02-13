@@ -5,7 +5,6 @@ class Consulta extends Model {
         super.init({
             medico: DataTypes.STRING,
             receita: DataTypes.STRING,
-            data: DataTypes.DATE,
         }, {
             sequelize
         })

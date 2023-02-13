@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('consulta', { 
+    return queryInterface.createTable('consulta', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -11,9 +11,9 @@ module.exports = {
       },
       user_id: {
         type: Sequelize.INTEGER,
-        allowNull:false,
-        References: { model: 'users', key: 'id'},
-        onUpdate:'CASCADE',
+        allowNull: false,
+        references: { model: 'users', key: 'id' },
+        onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
       medico: {
@@ -22,10 +22,6 @@ module.exports = {
       },
       receita: {
         type: Sequelize.STRING,
-        allowNull: false,
-      },
-      data: {
-        type: Sequelize.DATE,
         allowNull: false,
       },
       created_at: {

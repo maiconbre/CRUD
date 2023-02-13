@@ -2,13 +2,17 @@ const Sequelize = require ('sequelize');
 const dbConfig = require('../config/database');
 
 const User = require('../models/User');
-const Consultas = require('../models/Constulta');
-const Medicos = require('../models/Medico');
+const Consulta = require('../models/Constulta');
+const Medico = require('../models/Medico');
 
 const connection = new Sequelize(dbConfig);
 
 User.init(connection);
-Consultas.init(connection);
-Medicos.init(connection);
+Consulta.init(connection);
+Medico.init(connection);
+
+User.associate(connection.models);
+Consulta.associate(connection.models);
+
 
 module.exports = connection;

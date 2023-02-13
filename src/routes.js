@@ -9,6 +9,7 @@ routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
 
 routes.post('/users/:user_id/consultas', ConsultaController.store);
+routes.get('/users/:user_id/consultas', ConsultaController.index);
 
 
 module.exports = routes;

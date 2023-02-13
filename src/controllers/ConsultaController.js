@@ -2,6 +2,16 @@ const Consulta = require('../models/Constulta')
 const User = require('../models/User')
 
 module.exports = {
+  async index(req, res) {
+    const { user_id } = req.params;
+
+    const user = await User.findByPk(user_id, {
+      inclute: { association: "consultas"}
+    });
+
+    return res.json(user);
+  },
+
     async store(req, res) {
         const { user_id } = req.params;
         const { medico, receita, data } = req.body;

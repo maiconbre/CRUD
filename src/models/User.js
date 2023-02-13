@@ -13,5 +13,12 @@ class User extends Model {
         this.hasMany(models.Consulta, { foreignKey: 'user_id', as: 'consultas' });
     }
 }
+User.associate = (models) => {
+    User.hasMany(models.Consulta, {
+        foreignKey: 'user_id',
+        as: 'consultas',
+        onDelete: 'CASCADE',
+    });
+}
 
 module.exports = User;

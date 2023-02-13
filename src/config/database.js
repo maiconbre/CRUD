@@ -1,14 +1,9 @@
+
 module.exports = {
-    dialect: 'mysql',
-    host: 'localhost',
-    username: 'root',
-    password: '',
-    database: 'sqlnode',
-    define: {
-      timestamps: true,
-      underscored: true,
-    },
-  };
-
-
-  
+  dialect: 'sqlite',
+  storage: './susdb.sqlite',
+  define: {
+    timestamps: true,
+    underscored: true,
+  },
+};

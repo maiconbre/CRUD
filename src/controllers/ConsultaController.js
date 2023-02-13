@@ -5,11 +5,11 @@ module.exports = {
   async index(req, res) {
     const { user_id } = req.params;
 
-    const user = await User.findByPk(user_id, {
-      inclute: { association: "consultas"}
-    });
+    const user = await User.findByPk(user_id,);
 
-    return res.json(user);
+    const consultas = await Consulta.findAll({ where: { user_id } });
+
+    return res.json(consultas);
   },
 
     async store(req, res) {

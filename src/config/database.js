@@ -1,7 +1,7 @@
 
 module.exports = {
   dialect: 'sqlite',
-  storage: './susdb.sqlite',
+  storage: './db.sqlite',
   define: {
     timestamps: true,
     underscored: true,

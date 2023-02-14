@@ -1,10 +1,12 @@
 const { Model, DataTypes } = require('sequelize');
 
-class Consulta extends Model {
+class Endereco extends Model {
     static init(sequelize) {
         super.init({
-            medico: DataTypes.STRING,
-            receita: DataTypes.STRING,
+            cep: DataTypes.STRING,
+            cidade: DataTypes.STRING,
+            bairro: DataTypes.STRING,
+            estado: DataTypes.STRING
         }, {
             sequelize
         })
@@ -15,4 +17,4 @@ class Consulta extends Model {
     }
 }
 
-module.exports = Consulta;
+module.exports = Endereco;

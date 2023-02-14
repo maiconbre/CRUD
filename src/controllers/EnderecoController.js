@@ -1,4 +1,4 @@
-const Consulta = require('../models/Consulta')
+const Endereco = require('../models/Endereco')
 const User = require('../models/User')
 
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
     const { user_id } = req.params;
 
     const user = await User.findByPk(user_id, {
-      include: { association: 'consultas' }
+      include: { association: 'endereco' }
     });
 
     /*const consultas = await Consulta.findAll({ where: { user_id } });*/
@@ -16,7 +16,7 @@ module.exports = {
 
     async store(req, res) {
         const { user_id } = req.params;
-        const { medico, receita, data } = req.body;
+        const { cep, cidade, bairro, estado, data } = req.body;
     
         const user = await User.findByPk(user_id);
     
@@ -24,13 +24,15 @@ module.exports = {
           return res.status(400).json({ error: 'User not found' });
         }
     
-        const consulta = await Consulta.create({
-          medico,
-          receita,
+        const consulta = await Endereco.create({
+          cep,
+          cidade,
+          bairro,
+          estado,
           data,
           user_id,
         });
     
-        return res.json(consulta);
+        return res.json(endereco);
       }
     };

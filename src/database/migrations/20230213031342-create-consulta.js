@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('consulta', {
+    return queryInterface.createTable('endereco', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -16,11 +16,19 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE',
       },
-      medico: {
+      cep: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      receita: {
+      cidade: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      bairro: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
+      estado: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -36,6 +44,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('consulta');
+    return queryInterface.dropTable('endereco');
   }
 };

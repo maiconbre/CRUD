@@ -2,6 +2,6 @@
  
  DEPENDENCIAS:
  - npm install
- - npm install -g sequelize-cli
+ - npm install sequelize-cli
  - npx sequelize db:migrate
  - npm run dev

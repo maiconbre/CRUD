@@ -1,46 +1,67 @@
 const Cargo = require('../models/Cargo');
+const User = require('../models/User')
 
 module.exports = {
-    async index(req, res) {
-        const users = await Cargo.findAll();
+  async index(req, res) {
+    const { user_id } = req.params;
 
-        return res.json(users);
+    const user = await User.findByPk(user_id, {
+      include: { association: 'cargos' }
+    });
 
-    },
-    async store(req, res) {
-        const { profissao } = req.body;
+    /*const cargos = await Cargo.findAll({ where: { user_id } });*/
 
-        const user = await Cargo.create({ profissao })
+    return res.json(user);
+  },
 
-        return res.json(user);
-    },
+  async store(req, res) {
+    const { user_id } = req.params;
+    const { profissao, data } = req.body;
 
-    async update(req, res) {
-        const { id } = req.params;
-        const { profissao } = req.body;
-    
-        const user = await Cargo.findByPk(id);
-    
-        if (!user) {
-          return res.status(400).json({ error: 'Falha ao atualizar o cargo.' });
-        }
-    
-        const updatedUser = await user.update({ profissao });
-    
-        return res.json(updatedCargo);
-      },
+    const cargo_usuario = await User.findByPk(profissao);
 
-      async delete(req, res) {
-        const { id } = req.params;
-
-        const user = await Cargo.findByPk(id);
-
-        if (!user) {
-            return res.status(400).json({ error: 'Cargo não definido.' });
-        }
-
-        await user.destroy();
-                                                                                                            /* const Creator = mxxcxn was here */
-        return res.send();
+    if (!cargo_usuario) {
+      return res.status(400).json({ error: 'ERRO! Cargo não encontrado.' });
     }
-}
+
+    const cargo = await Cargo.create({
+      profissao,
+      data,
+      user_id,
+    });
+
+    return res.json(cargo);
+  },
+
+  async update(req, res) {
+    const { id } = req.params;
+    const { profissao } = req.body;
+
+    const cargo = await Cargo.findByPk(id);
+
+    if (!cargo) {
+      return res.status(400).json({ error: 'Falha ao atualizar o cargo.' });
+    }
+
+    const updatedCargo = await cargo.update({ profissao });
+
+    return res.json(updatedCargo);
+  },
+
+  async delete(req, res) {
+    const { id } = req.params;
+    const { profissao } = req.body;
+
+    const cargo = await Cargo.findByPk(id);
+
+    if (!cargo) {
+      return res.status(400).json({ error: 'Cargo não encontrado.' });
+    }
+
+    await cargo.destroy();
+    /* const Creator = mxxcxn was here */
+    return res.send(`Cargo ${id} deletado.`);
+  }
+
+
+};

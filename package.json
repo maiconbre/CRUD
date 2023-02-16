@@ -1,0 +1,19 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "DEPENDENCIAS:\r  - npm install\r  - npm install -g sequelize-cli\r  - npx sequelize db:migrate\r  - npm run dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiconbre/CRUD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maiconbre/CRUD/issues"
+  },
+  "homepage": "https://github.com/maiconbre/CRUD#readme"
+}

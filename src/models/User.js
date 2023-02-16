@@ -10,15 +10,17 @@ class User extends Model {
         })
     }
     static associate(models) {
-        this.hasMany(models.Consulta, { foreignKey: 'user_id', as: 'consultas' });                                                                                              /* const Creator = mxxcxn was here */
+        this.hasMany(models.Endereco, { foreignKey: 'user_id', as: 'enderecos' });                                                                                              /* const Creator = mxxcxn was here */
     }
 }
 User.associate = (models) => {
-    User.hasMany(models.Consulta, {
+    User.hasMany(models.Endereco, {
         foreignKey: 'user_id',
-        as: 'consultas',
+        as: 'enderecos',
         onDelete: 'CASCADE',
     });
+
+   
 }
 
 module.exports = User;

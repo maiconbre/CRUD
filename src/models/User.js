@@ -13,7 +13,12 @@ class User extends Model {
     static associate(models) {
         this.hasMany(models.Endereco, { foreignKey: 'user_id', as: 'enderecos' });                                                                                              /* const Creator = mxxcxn was here */
     }
+
+    static associate(models) {
+        this.hasOne(models.Cargo, { foreignKey: 'profissao', as: 'cargos' });                                                                                              /* const Creator = mxxcxn was here */
+    }
 }
+
 User.associate = (models) => {
     User.hasMany(models.Endereco, {
         foreignKey: 'user_id',
@@ -21,6 +26,11 @@ User.associate = (models) => {
         onDelete: 'CASCADE',
     });
 
+    User.hasOne(models.Cargo, {
+        foreignKey: 'user_id',
+        as: 'cargos',
+        onDelete: 'CASCADE',
+    });
 
 }
 

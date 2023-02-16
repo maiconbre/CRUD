@@ -3,6 +3,7 @@ const express = require ('express');
 const EnderecoController = require('./controllers/EnderecoController');
 const UserController = require('./controllers/UserController');
 const SedeController = require ('./controllers/SedeController');
+const CargoController = require('./controllers/CargoController')
 
 const routes = express.Router();
 
@@ -21,5 +22,9 @@ routes.post('/sedes', SedeController.store);
 routes.put('/sedes/:id', SedeController.update);
 routes.delete('/sedes/:id', SedeController.delete);
 
+routes.post('/users/:user_id/cargos', CargoController.store);
+routes.get('/users/:user_id/cargos', CargoController.index);
+routes.put('/users/:user_id/cargos', CargoController.update);
+routes.delete('/users/:user_id/cargos', CargoController.delete);
 
 module.exports = routes;

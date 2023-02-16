@@ -9,29 +9,29 @@ module.exports = {
 
     },
     async store(req, res) {
-        const { name, email } = req.body;
+        const { nome, email, github } = req.body;
 
-        const user = await User.create({ name, email })
+        const user = await User.create({ nome, email, github  })
 
         return res.json(user);
     },
 
     async update(req, res) {
         const { id } = req.params;
-        const { name, email } = req.body;
-    
-        const user = await User.findByPk(id);
-    
-        if (!user) {
-          return res.status(400).json({ error: 'Falha ao atualizar usuário' });
-        }
-    
-        const updatedUser = await user.update({ name, email });
-    
-        return res.json(updatedUser);
-      },
+        const { nome, email, github } = req.body;
 
-      async delete(req, res) {
+        const user = await User.findByPk(id);
+
+        if (!user) {
+            return res.status(400).json({ error: 'Falha ao atualizar usuário' });
+        }
+
+        const updatedUser = await user.update({ nome, email, github });
+
+        return res.json(updatedUser);
+    },
+
+    async delete(req, res) {
         const { id } = req.params;
 
         const user = await User.findByPk(id);
@@ -41,7 +41,7 @@ module.exports = {
         }
 
         await user.destroy();
-                                                                                                            /* const Creator = mxxcxn was here */
+        /* const Creator = mxxcxn was here */
         return res.send();
     }
 }

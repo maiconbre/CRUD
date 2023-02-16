@@ -13,7 +13,7 @@ class Endereco extends Model {
     }
 
     static associate(models) {
-        this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user'}) //aqui é user msm pois esta dizendo que muitos endereços sao para 1 user
+        this.belongsTo(models.User, { foreignKey: 'user_id', as: 'user' }) 
     }
 }
 

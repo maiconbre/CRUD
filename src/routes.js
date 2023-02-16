@@ -10,8 +10,10 @@ routes.post('/users', UserController.store);
 routes.put('/users/:id', UserController.update);
 routes.delete('/users/:id', UserController.delete);
 
-routes.post('/users/:user_id/endereco', EnderecoController.store);
-routes.get('/users/:user_id/endereco', EnderecoController.index);
+routes.get('/users/:user_id/enderecos', EnderecoController.index);
+routes.post('/users/:user_id/enderecos', EnderecoController.store);
+routes.put('/users/:user_id/enderecos/:id', EnderecoController.update);
+routes.delete('/users/:user_id/enderecos/:id', EnderecoController.delete);
 
 
 module.exports = routes;

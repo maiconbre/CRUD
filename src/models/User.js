@@ -16,9 +16,11 @@ class User extends Model {
 User.associate = (models) => {
     User.hasMany(models.Endereco, {
         foreignKey: 'user_id',
-        as: 'endereco',
+        as: 'enderecos',
         onDelete: 'CASCADE',
     });
+
+   
 }
 
 module.exports = User;

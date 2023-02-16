@@ -2,6 +2,9 @@ const Cargo = require('../models/Cargo');
 const User = require('../models/User')
 
 module.exports = {
+
+  /* MÉTODO  GET - funfando */
+
   async index(req, res) {
     const { user_id } = req.params;
 
@@ -9,59 +12,63 @@ module.exports = {
       include: { association: 'cargos' }
     });
 
-    /*const cargos = await Cargo.findAll({ where: { user_id } });*/
-
     return res.json(user);
   },
 
+
+
+  /* MÉTODO POST - funfando */
+
   async store(req, res) {
     const { user_id } = req.params;
-    const { profissao, data } = req.body;
+    const { profissao } = req.body;
 
-    const cargo_usuario = await User.findByPk(profissao);
+    const user = await User.findByPk(user_id);
 
-    if (!cargo_usuario) {
-      return res.status(400).json({ error: 'ERRO! Cargo não encontrado.' });
+    if (!user) {
+      return res.status(400).json({ error: 'ERRO! Usuário não encontrado.' });
     }
 
     const cargo = await Cargo.create({
       profissao,
-      data,
       user_id,
     });
 
     return res.json(cargo);
   },
 
+
+   /* MÉTODO PUT - funfando */
+
   async update(req, res) {
-    const { id } = req.params;
+    const { user_id } = req.params;
     const { profissao } = req.body;
 
-    const cargo = await Cargo.findByPk(id);
+    const user = await Cargo.findByPk(user_id);
 
-    if (!cargo) {
+    if (!user) {
       return res.status(400).json({ error: 'Falha ao atualizar o cargo.' });
     }
 
-    const updatedCargo = await cargo.update({ profissao });
+    const updatedCargo = await user.update({ profissao });
 
     return res.json(updatedCargo);
   },
 
-  async delete(req, res) {
-    const { id } = req.params;
-    const { profissao } = req.body;
+/* MÉTODO DELETE - funfando */
 
-    const cargo = await Cargo.findByPk(id);
+  async delete(req, res) {
+    const { user_id  } = req.params;
+
+    const cargo = await Cargo.findByPk(user_id );
 
     if (!cargo) {
       return res.status(400).json({ error: 'Cargo não encontrado.' });
     }
 
     await cargo.destroy();
-    /* const Creator = mxxcxn was here */
-    return res.send(`Cargo ${id} deletado.`);
-  }
 
+    return res.send(`Cargo do usuário número ${user_id} deletado.`);
+  }
 
 };

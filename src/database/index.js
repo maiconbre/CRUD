@@ -3,6 +3,7 @@ const dbConfig = require('../config/database');
 
 const User = require('../models/User');
 const Endereco = require('../models/Endereco');
+const Sede = require('../models/Sede')
 
 
 
@@ -10,6 +11,7 @@ const connection = new Sequelize(dbConfig);
 
 User.init(connection);
 Endereco.init(connection);
+Sede.init(connection);
 
 
 User.associate(connection.models);

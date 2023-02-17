@@ -1,9 +1,11 @@
 <h1> CRUD </h1>
 
 
-<h4><p> 📌Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão o MVP (Produto Mínimo Viável) de um aplicativo. No projeto foi definido quais as entidades necessárias e compatíveis com o tema. Cada integrante do grupo ficou responsável por implementar uma dessas entidades, sendo 5 no total. </p></h4>
+<h4><p> 📌Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão o MVP (Produto Mínimo Viável) de um aplicativo. No projeto foi definido quais as entidades necessárias e compatíveis com o tema. Cada integrante do grupo ficou responsável por implementar uma dessas entidades. </p></h4>
 
 <hr>
+
+
 <p><p>
 
 <h3>CRUD</H3>

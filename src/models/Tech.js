@@ -5,12 +5,13 @@ class Tech extends Model {
         super.init({
             espec: DataTypes.STRING,
         }, {
-            sequelize
+            sequelize,
+            tableName: 'techs',
         })
     }
 
     static associate(models) {
-        this.belongsToMany(models.User, {foreignKey: 'tech_id', through: 'user_techs', as: 'users'}) 
+        this.belongsToMany(models.User, { foreignKey: 'tech_id', through: 'user_techs', as: 'users'}) 
     }
 }
 

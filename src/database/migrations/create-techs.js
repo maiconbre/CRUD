@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('techs', {
+    return queryInterface.createTable('techs', { 
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -11,15 +11,15 @@ module.exports = {
       },
       espec: {
         type: Sequelize.STRING,
-        allowNull: true,
+        allowNull: false,
       },
       created_at: {
         type: Sequelize.DATE,
-        allowNull: true,
+        allowNull: false,
       },
       updated_at: {
         type: Sequelize.DATE,
-        allowNull: true,
+        allowNull: false,
       },
     });
   },

@@ -23,13 +23,14 @@ routes.post('/sedes', SedeController.store);
 routes.put('/sedes/:id', SedeController.update);
 routes.delete('/sedes/:id', SedeController.delete);
 
-routes.post('/users/:user_id/cargos', CargoController.store);
 routes.get('/users/:user_id/cargos', CargoController.index);
+routes.post('/users/:user_id/cargos', CargoController.store);
 routes.put('/users/:user_id/cargos', CargoController.update);
 routes.delete('/users/:user_id/cargos', CargoController.delete);
 
 routes.get('/users/:user_id/techs', TechController.index);
 routes.post('/users/:user_id/techs', TechController.store);
+routes.delete('/users/:user_id/techs/:id', TechController.delete);
 
 
 module.exports = routes;

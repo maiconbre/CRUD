@@ -1,41 +1,44 @@
 <h1> CRUD </h1>
 
 
-<p> Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão o MVP (Produto Mínimo Viável) de um aplicativo. No projeto temos que definir quais as entidades que serão necessárias e compatíveis com o tema que a equipe decidir. Cada integrante do grupo é responsável por implementar uma dessas entidades, sendo 5 no total. </p>
+<h4><p> 📌Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão o MVP (Produto Mínimo Viável) de um aplicativo. No projeto foi definido quais as entidades necessárias e compatíveis com o tema. Cada integrante do grupo ficou responsável por implementar uma dessas entidades, sendo 5 no total. </p></h4>
+
 <hr>
+<p><p>
 
-<h3>Requisitos obrigatórios: </h3>
+<h3>CRUD</H3>
+CRUD é um acrônimo em inglês que significa "Create, Read, Update e Delete", essas operações básicas são fundamentais para o desenvolvimento de aplicativos que exigem a manipulação de dados. A implementação de um CRUD eficiente permite que as aplicações gerenciem, de forma fácil e intuitiva, as informações que são armazenadas em um banco de dados ou sistema de gerenciamento de informações.</p
 
-<p> ⇨ Utilizar o padrão MVC; </p>
-<p> ⇨ Utilizar os verbos HTTP seguindo o padrão REST; </p>
-<p> ⇨ Implementar todas as operações CRUD; </p>
-<p> ⇨ Utilizar o padrão de projeto (design pattern) DAO para abstração de transações no banco, com Promises; </p>
-<p> ⇨ Utilização de async/await para operações no banco (DAO); </p>
-<p> ⇨ Ter o código fonte hospedado em um repositório no Github </p>
 
-<br>
+![image](https://user-images.githubusercontent.com/112409145/219653295-a773b2ac-77a7-4176-9627-d57c3bb57305.png)
 
-<h3> As rotas a serem desenvolvidas para as entidades são: </h3>
-<p> ⇨ Listagem de todos os registros; </p>
-<p> ⇨ Listagem de um único registro com base em um parâmetro de rota; </p>
-<p> ⇨ Inserção de um registro; </p>
-<p> ⇨ Modificação de um registro; </p>
-<p> ⇨ Deleção de um registro</p>
+
+<h3> 🎲 Cada uma das operações do CRUD é usada para interagir com os dados armazenados em um banco de dados ou sistema de gerenciamento de informações.</h3>
+
+<h3>✍️ Create (Criar): refere-se à ação de adicionar novos dados ao sistema. Por exemplo, criar um novo registro em uma tabela de um banco de dados.</h3>
+
+<h3> 📑 Read (Ler): refere-se à ação de ler ou recuperar dados existentes do sistema. Por exemplo, ler e exibir as informações de um registro específico de uma tabela.
+</h3>
+<h3>📝Update (Atualizar): refere-se à ação de modificar os dados existentes no sistema. Por exemplo, atualizar o valor de um campo em um registro de uma tabela.</h3>
+
+<h3> 🗑 Delete (Deletar): refere-se à ação de remover dados existentes do sistema. Por exemplo, excluir um registro específico de uma tabela.</h3>
 <hr>
-
+<h2>👻Entidades</h2>
+<h4>As entidades e seus relacionamentos são essenciais para a criação de um banco de dados bem projetado e funcional, permitindo que as aplicações possam armazenar e acessar dados de forma eficiente e eficaz. Desenvolmentos as seguintes entidades:
 <h3> Entidades do Banco de Dados: </h3>
 <p> ⇨ Usuario; </p>
 <p> ⇨ Endereço; </p>
 <p> ⇨ Cargo; </p>
 <p> ⇨ Tech;  </p>
 <p> ⇨ Sede. </p>
+As entidades são definidas por meio de um modelo de dados, que descreve a estrutura do banco de dados e como as entidades se relacionam entre si. As relações entre as entidades são estabelecidas por meio de chaves primárias e estrangeiras que permitem que os dados sejam conectados de forma consistente e eficiente.
 
-<h3> Rotas possíveis: </h3>
-<p> ⇨ GET; </p>
-<p> ⇨ POST; </p>
-<p> ⇨ PUT; </p>
-<p> ⇨ DELETE.</p>
-
+<h3> As rotas desenvolvidas para as entidades: </h3>
+<p> ⇨ Listagem de todos os registros; </p>
+<p> ⇨ Listagem de um único registro com base em um parâmetro de rota; </p>
+<p> ⇨ Inserção de um registro; </p>
+<p> ⇨ Modificação de um registro; </p>
+<p> ⇨ Deleção de um registro</p>
 <hr>
 
 <h3>Tecnologias: </h3>
@@ -44,9 +47,20 @@
 <p> ⇨ Github; </p>
 <p> ⇨ Github Desktop;</p>
 <p> ⇨ Node.js;</p>
+<p> ⇨ Sequelize.</p>
+<p> ⇨ SqlLite3.</p>
 <p> ⇨ NPM para instalação de pacotes;</p>
 <p> ⇨ Trello.</p>
+<p><p>
 
+<h3>Padõres Utilizados: </h3>
+
+<p> ⇨ Utilizar o padrão MVC; </p>
+<p> ⇨ Utilizar os verbos HTTP seguindo o padrão REST; </p>
+<p> ⇨ Implementar todas as operações CRUD; </p>
+<p> ⇨ Utilizar o padrão de projeto (design pattern) DAO para abstração de transações no banco, com Promises; </p>
+<p> ⇨ Utilização de async/await para operações no banco (DAO); </p>
+<p> ⇨ Ter o código fonte hospedado em um repositório no Github </p>
 
 <h3> Dependências: </h3>
 

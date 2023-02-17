@@ -28,11 +28,31 @@ CRUD é um acrônimo em inglês que significa "Create, Read, Update e Delete", e
 <h2>👻Entidades</h2>
 <h4>As entidades e seus relacionamentos são essenciais para a criação de um banco de dados bem projetado e funcional, permitindo que as aplicações possam armazenar e acessar dados de forma eficiente e eficaz. Desenvolmentos as seguintes entidades:
 <h3> Entidades do Banco de Dados: </h3>
-<p> ⇨ Usuario; </p>
-<p> ⇨ Endereço; </p>
-<p> ⇨ Cargo; </p>
+<p> ⇨ Usuario; 
+
+  ![image](https://user-images.githubusercontent.com/112409145/219681414-c7f23eaa-8e19-429c-b39a-534a742a68b9.png)
+
+ ⇨ Endereço; 
+  
+  ![image](https://user-images.githubusercontent.com/112409145/219681663-22b51628-3cfc-46b0-8a9b-d8e0bad64233.png)
+
+  
+<p> ⇨ Cargo; 
+  
+  ![image](https://user-images.githubusercontent.com/112409145/219683063-ee334d34-ca86-4035-bcb3-3b9231b55615.png)
+
+<p> ⇨ Sede;
+  
+  ![image](https://user-images.githubusercontent.com/112409145/219683374-4b4dfcff-700f-4d20-8b8e-85ba1c6d993f.png)
+
 <p> ⇨ Tech;  </p>
-<p> ⇨ Sede. </p>
+  
+  ![image](https://user-images.githubusercontent.com/112409145/219683554-e2e7b52a-014d-4cfe-b4d7-065f6232fee0.png)
+
+<p> ⇨ user_techs. </p>
+  
+  ![image](https://user-images.githubusercontent.com/112409145/219683709-c8cdbe09-ea8b-439b-94d4-57df44540192.png)
+
 As entidades são definidas por meio de um modelo de dados, que descreve a estrutura do banco de dados e como as entidades se relacionam entre si. As relações entre as entidades são estabelecidas por meio de chaves primárias e estrangeiras que permitem que os dados sejam conectados de forma consistente e eficiente.
 
 <h3> As rotas desenvolvidas para as entidades: </h3>

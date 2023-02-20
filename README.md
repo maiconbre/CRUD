@@ -43,12 +43,13 @@ As rotas desenvolvidas para as entidades:
 
 ## 🚀 Tecnologias: 
 
-<ul><li>🛠️ Visual Studio Code;</li>
-<li>🐙 Github;</li>
-<li>🖥️ Github Desktop;</li>
+<ul><li>🖥️ Visual Studio Code;</li>
+<li>🐱‍👤 GitHub;</li>
 <li>🟢 Node.js;</li>
-<li>🗃️ Sequelize;</li>
-<li>🗃️ SqlLite3;</li>
+<li>👾 Sequelize;</li>
+  <li>🚅 Express;</li>
+  <li>👿 Nodemon;</li>
+<li>🗄️  SQLite;</li>
 <li>📦 NPM para instalação de pacotes;</li>
 <li>📋 Trello.</li></ul>
 
@@ -56,14 +57,14 @@ As rotas desenvolvidas para as entidades:
 
 ## 📐 Padrões Utilizados:
 
-<ul><li>🏗️ Utilizar o padrão MVC;</li>
+<ul><li>🗃️ Utilizar o padrão MVC;</li>
 <li>🌐 Utilizar os verbos HTTP seguindo o padrão REST;</li>
 <li>🔨 Implementar todas as operações CRUD;</li>
-<li>🏭 Utilizar o padrão de projeto (design pattern) DAO para abstração de transações no banco, com Promises;</li>
+<li>🧲 Utilizar o padrão de projeto (design pattern) DAO para abstração de transações no banco, com Promises;</li>
 <li>⏱️ Utilização de async/await para operações no banco (DAO);</li>
 <li>🌍 Ter o código fonte hospedado em um repositório no Github.</li></ul>
 
-## 🛠️ Dependências:
+## ▶️ Iniciando o projeto:
 
 ```bash
 
@@ -79,9 +80,39 @@ $ git clone <https://github.com/maiconbre/CRUD>
 
 # Execute a aplicação 
 ⇨ npm run dev
+```
 
-Acesse a aplicação no seu navegador em:
-⇨ <http://localhost:3030>
+## 🛤️ Teste as os metodos nas respectivas rotas :
+```bash
+$ GET - POST ⇨ Users
+⇨ <http://localhost:3030/users>
+
+$ GET[id] - PUT - DELETE ⇨ Users
+⇨ <http://localhost:3030/users/[id]>
+
+$ GET - POST ⇨ Sedes
+⇨ <http://localhost:3030/sedes>
+
+$ GET[id] - PUT - DELETE ⇨ Sedes
+⇨ <http://localhost:3030/sedes/[id]>
+
+$ GET - POST ⇨
+⇨ <http://localhost:3030/users/[user_id]/enderecos>
+
+$ GET[id] - PUT - DELETE ⇨
+⇨ <http://localhost:3030/users/[user_id]/enderecos/[id]>
+
+$ GET - POST ⇨ Techs
+⇨ <http://localhost:3030/users/[user_id]/techs>
+
+$ GET[id] - PUT - DELETE ⇨ Techs
+⇨ <http://localhost:3030/users/[user_id]/techs>[id]>
+
+$ GET - POST ⇨ Cargos
+⇨ <http://localhost:3030/users/[user_id]/cargos>
+
+$ GET[id] - PUT - DELETE ⇨ Cargos
+⇨ <http://localhost:3030/users/[user_id]/cargos>
 ```
 
 ## 📝 Licença

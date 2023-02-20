@@ -108,71 +108,77 @@ As rotas desenvolvidas para as entidades:
 ```bash
 
 # Clone o repositório
-$ git clone <https: //github.com/maiconbre/CRUD>
+$ git clone <https://github.com/maiconbre/CRUD>
 
-    # Instale as dependências
-    ⇨ npm install
-    ⇨ npm install sequelize-cli
+# Instale as dependências
+⇨ npm install
+⇨ npm install sequelize-cli
 
-    # Execute comando para gerar o banco de dados
-    ⇨ npx sequelize db:migrate
+# Execute comando para gerar o banco de dados
+⇨ npx sequelize db:migrate
 
-    # Execute a aplicação
-    ⇨ npm run dev
-    ```
+# Execute a aplicação 
+⇨ npm run dev
+```
+## 🛤️ Teste os métodos nas respectivas rotas :
 
-    ## 🛤️ Teste os métodos nas respectivas rotas :
+```bash
+    🟢 GET - POST ⇨ Users
+    🌐 <http://localhost:3030/users>
 
-    🟢 GET - POST ⇨ Users<br>
-    🌐 <code><http://localhost:3030/users></code>
+    🟢 GET[id] - PUT - DELETE ⇨ Users
+    🌐 <http://localhost:3030/users/[id]>
+```
+<hr>
+    
+```bash
+    🟢 GET - POST ⇨ Sedes
+    🌐 <http://localhost:3030/sedes>
 
-    🟢 GET[id] - PUT - DELETE ⇨ Users<br>
-    🌐 <code><http://localhost:3030/users/[id]></code>
-    <hr>
+    🟢 GET[id] - PUT - DELETE ⇨ Sedes
+    🌐 <http://localhost:3030/sedes/[id]>
+```
 
-    🟢 GET - POST ⇨ Sedes<br>
-    🌐 <code><http://localhost:3030/sedes></code>
+<hr>
 
-    🟢 GET[id] - PUT - DELETE ⇨ Sedes<br>
-    🌐 <code><http://localhost:3030/sedes/[id]></code>
-    <hr>
+```bash
 
-    🟢 GET - POST ⇨ Endereços<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/enderecos></code>
+    🟢 GET - POST ⇨ Endereços
+    🌐 <http://localhost:3030/users/[user_id]/enderecos>
 
-    🟢 GET[id] - PUT - DELETE ⇨ Endereços<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/enderecos/[id]></code>
-    <hr>
+    🟢 GET[id] - PUT - DELETE ⇨ Endereços
+    🌐 <http://localhost:3030/users/[user_id]/enderecos/[id]>
+```
 
-    🟢 GET - POST ⇨ Techs<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/techs></code>
+<hr>
 
-    🟢 GET[id] - PUT - DELETE ⇨ Techs<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/techs/[id]></code>
-    <hr>
+```bash
+    🟢 GET - POST ⇨ Techs
+    🌐 <http://localhost:3030/users/[user_id]/techs><
 
-    🟢 GET - POST ⇨ Cargos<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/cargos></code>
+    🟢 GET[id] - PUT - DELETE ⇨ Techs
+    🌐 <http://localhost:3030/users/[user_id]/techs/[id]>
+```
 
-    🟢 GET[id] - PUT - DELETE ⇨ Cargos<br>
-    🌐 <code><http://localhost:3030/users/[user_id]/cargos></code>
+<hr>
 
+```bash
+    🟢 GET - POST ⇨ Cargos
+    🌐 <http://localhost:3030/users/[user_id]/cargos>
 
-    ## 📝 Licença
+    🟢 GET[id] - PUT - DELETE ⇨ Cargos
+    🌐 <http://localhost:3030/users/[user_id]/cargos>
+```
 
-    Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/maiconbre/CRUD/blob/main/LICENSE) para
-    obter mais informações.
+## 📝 Licença
+Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/maiconbre/CRUD/blob/main/LICENSE) para
+obter mais informações.
 
-    ---
-    <div align="center">
-        <h2>Feito com ❤️ pelos Desenvolvedores ⬇️</h2>
-
-        <table>
-            <tr>
-                <td align="center"><a href="https://github.com/maiconbre"><img style="border-radius: 50%;"
-                            src="https://avatars.githubusercontent.com/u/112555118?s=400&u=29f6b5dd0e203807a101ee8d70f6a026cf8fabbc&v=4"
-                            width="150px;" alt="" /><br /><sub><b>Maicon Brendon</b></sub></a><br /><a
-                        href="https://github.com/maiconbre" title="Maicon Brendon"></a></td>
+<div align="center">
+<h2>Feito com ❤️ pelos Desenvolvedores ⬇️</h2>
+<table>
+<tr>
+<td align="center"><a href="https://github.com/maiconbre"><img style="border-radius: 50%;"src="https://avatars.githubusercontent.com/u/112555118?s=400&u=29f6b5dd0e203807a101ee8d70f6a026cf8fabbc&v=4"width="150px;" alt="" /><br /><sub><b>Maicon Brendon</b></sub></a><br /><a href="https://github.com/maiconbre" title="Maicon Brendon"></a></td>
                 <td align="center"><a href="https://github.com/Tamiresporto"><img style="border-radius: 50%;"
                             src="https://avatars.githubusercontent.com/u/112409145?v=4" width="150px;"
                             alt="" /><br /><sub><b>Tamires Porto</b></sub></a><br /><a

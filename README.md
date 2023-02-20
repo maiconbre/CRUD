@@ -1,4 +1,4 @@
-# CRUD 📝
+# CRUD Tech Enterprise 📝
 ## 📌 Sobre o Projeto
 Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão o MVP (Produto Mínimo Viável) de um aplicativo. No projeto foi definido quais as entidades necessárias e compatíveis com o tema. Cada integrante do grupo ficou responsável por implementar uma dessas entidades.
 

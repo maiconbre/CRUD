@@ -8,6 +8,7 @@ const TechController = require('./controllers/TechController');
 
 const routes = express.Router();
 
+routes.get('/users/:id', UserController.indexOne);
 routes.get('/users', UserController.index);
 routes.post('/users', UserController.store);
 routes.put('/users/:id', UserController.update);

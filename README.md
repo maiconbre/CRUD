@@ -1,15 +1,17 @@
-# CRUD Tech Enterprise 📝
+<h1 align="center"> CRUD Tech Enterprise 👨‍💻</h1>
 
 ## 📌 Sobre o Projeto
-Projeto em grupo da Resilia, módulo 5. Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão
-o MVP (Produto Mínimo Viável) de um aplicativo. No projeto foi definido quais as entidades necessárias e compatíveis com
+Projeto em grupo da Resilia, módulo 5. 
+Recebemos uma proposta onde o objetivo é desenvolver propostas de APIs que serão
+o MVP (Produto Mínimo Viável) de um aplicativo. 
+<br>No projeto foi definido quais as entidades necessárias e compatíveis com
 o tema. Cada integrante do grupo ficou responsável por implementar uma dessas entidades.
 
 <hr>
 
 ## 📚 O que é CRUD?
 CRUD é um acrônimo em inglês que significa "Create, Read, Update e Delete", essas operações básicas são fundamentais
-para o desenvolvimento de aplicativos que exigem a manipulação de dados. A implementação de um CRUD eficiente permite
+para o desenvolvimento de aplicativos que exigem a manipulação de dados.<br> A implementação de um CRUD eficiente permite
 que as aplicações gerenciem, de forma fácil e intuitiva, as informações que são armazenadas em um banco de dados ou
 sistema de gerenciamento de informações.
 
@@ -169,7 +171,7 @@ $ git clone <https://github.com/maiconbre/CRUD>
     🟢 GET[id] - PUT - DELETE ⇨ Cargos
     🌐 <http://localhost:3030/users/[user_id]/cargos>
 ```
-
+<br><br><br><br>
 ## 📝 Licença
 Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/maiconbre/CRUD/blob/main/LICENSE) para
 obter mais informações.

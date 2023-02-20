@@ -81,7 +81,7 @@ $ git clone <https://github.com/maiconbre/CRUD>
 ⇨ npm run dev
 
 Acesse a aplicação no seu navegador em:
-⇨ http://localhost:3030
+⇨ <http://localhost:3030>
 ```
 
 ## 📝 Licença
@@ -89,15 +89,16 @@ Acesse a aplicação no seu navegador em:
 Este projeto está sob a licença MIT. Consulte a [LICENÇA](https://github.com/maiconbre/CRUD/blob/main/LICENSE) para obter mais informações.
 
 ---
-
-<h2>Feito com ❤️ pelos Desenvolvedores</h2>
+<div align="center">
+<h2>Feito com ❤️ pelos Desenvolvedores ⬇️</h2>
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/maiconbre"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112555118?s=400&u=29f6b5dd0e203807a101ee8d70f6a026cf8fabbc&v=4" width="100px;" alt=""/><br /><sub><b>Maicon Brendon</b></sub></a><br /><a href="https://github.com/maiconbre" title="Maicon Brendon"></a></td>
-    <td align="center"><a href="https://github.com/Tamiresporto"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112409145?v=4" width="100px;" alt=""/><br /><sub><b>Tamires Porto</b></sub></a><br /><a href="https://github.com/Tamiresporto" title="Tamires Porto"></a></td>
-    <td align="center"><a href="https://https://github.com/brwnalima"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112510971?v=4" width="100px;" alt=""/><br /><sub><b>Bruna Lima</b></sub></a><br /><a href="https://https://github.com/brwnalima" title="Bruna Lima"></a></td>
-    <td align="center"><a href="https://github.com/GilmarAlves99"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112699437?v=4" width="100px;" alt=""/><br /><sub><b>Tais Campos</b></sub></a><br /><a href="https://github.com/TaisC468" title="Tais Campos"></a></td>   
-    <td align="center"><a href="https://github.com/suannyrodrigues"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112557354?v=4" width="100px;" alt=""/><br /><sub><b>Suanny Rodrigues</b></sub></a><br /><a href="https://github.com/suannyrodrigues" title="Suanny Rodrigues"></a></td>
+    <td align="center"><a href="https://github.com/maiconbre"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112555118?s=400&u=29f6b5dd0e203807a101ee8d70f6a026cf8fabbc&v=4" width="150px;" alt=""/><br /><sub><b>Maicon Brendon</b></sub></a><br /><a href="https://github.com/maiconbre" title="Maicon Brendon"></a></td>
+    <td align="center"><a href="https://github.com/Tamiresporto"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112409145?v=4" width="150px;" alt=""/><br /><sub><b>Tamires Porto</b></sub></a><br /><a href="https://github.com/Tamiresporto" title="Tamires Porto"></a></td>
+    <td align="center"><a href="https://https://github.com/brwnalima"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112510971?v=4" width="150px;" alt=""/><br /><sub><b>Bruna Lima</b></sub></a><br /><a href="https://https://github.com/brwnalima" title="Bruna Lima"></a></td>
+    <td align="center"><a href="https://github.com/GilmarAlves99"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112699437?v=4" width="150px;" alt=""/><br /><sub><b>Tais Campos</b></sub></a><br /><a href="https://github.com/TaisC468" title="Tais Campos"></a></td>   
+    <td align="center"><a href="https://github.com/suannyrodrigues"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/112557354?v=4" width="150px;" alt=""/><br /><sub><b>Suanny Rodrigues</b></sub></a><br /><a href="https://github.com/suannyrodrigues" title="Suanny Rodrigues"></a></td>
   </tr>
 </table>
+</div>

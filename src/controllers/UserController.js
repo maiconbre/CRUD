@@ -11,7 +11,7 @@ module.exports = {
     async store(req, res) {
         const { nome, email, github } = req.body;
 
-        const user = await User.create({ nome, email, github  })
+        const user = await User.create({ nome, email, github })
 
         return res.json(user);
     },

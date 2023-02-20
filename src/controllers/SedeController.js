@@ -11,7 +11,7 @@ module.exports = {
     async store(req, res) {
         const { equipe, retorno, cidade, bairro, cep } = req.body;
 
-        const sede = await Sede.create({ equipe, retorno, cidade, bairro, cep  })
+        const sede = await Sede.create({ equipe, retorno, cidade, bairro, cep })
 
         return res.json(sede);
     },

@@ -1,8 +1,8 @@
-const express = require ('express');
+const express = require('express');
 
 const EnderecoController = require('./controllers/EnderecoController');
 const UserController = require('./controllers/UserController');
-const SedeController = require ('./controllers/SedeController');
+const SedeController = require('./controllers/SedeController');
 const CargoController = require('./controllers/CargoController');
 const TechController = require('./controllers/TechController');
 

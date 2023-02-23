@@ -9,8 +9,14 @@ module.exports = {
     const { user_id } = req.params;
 
     const user = await User.findByPk(user_id, {
-      include: { association: 'cargos' }
+      include: {
+        association: 'cargos'
+      }
     });
+
+    if (!user) {
+      return res.status(400).json({ error: 'ERRO! Usuário não encontrado.' });
+    }
 
     return res.json(user);
   },
@@ -38,7 +44,7 @@ module.exports = {
   },
 
 
-   /* MÉTODO PUT - funfando */
+  /* MÉTODO PUT - funfando */
 
   async update(req, res) {
     const { user_id } = req.params;
@@ -55,12 +61,12 @@ module.exports = {
     return res.json(updatedCargo);
   },
 
-/* MÉTODO DELETE - funfando */
+  /* MÉTODO DELETE - funfando */
 
   async delete(req, res) {
-    const { user_id  } = req.params;
+    const { user_id } = req.params;
 
-    const cargo = await Cargo.findByPk(user_id );
+    const cargo = await Cargo.findByPk(user_id);
 
     if (!cargo) {
       return res.status(400).json({ error: 'Cargo não encontrado.' });

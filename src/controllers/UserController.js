@@ -1,4 +1,7 @@
 const User = require('../models/User');
+const Cargo = require('../models/Cargo')
+const Endereco = require('../models/Endereco')
+const Tech = require('../models/Tech')
 
 
 module.exports = {

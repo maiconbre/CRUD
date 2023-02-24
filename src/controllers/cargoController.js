@@ -3,7 +3,7 @@ const User = require('../models/User')
 
 module.exports = {
 
-  /* MÉTODO  GET - funfando */
+  /* MÉTODO  GET - funfandoo */
 
   async index(req, res) {
     const { user_id } = req.params;
